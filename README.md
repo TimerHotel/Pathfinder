@@ -3,27 +3,27 @@
 Pathfinder lets you easily Pathfind for Character Models, including the Player. Pathfinder can be used both on the Server and Client.
 
 ## Getting Started
-Pathfinder uses OOP, and requires you to provide a Character Model to work. To create a new Pathfinder Class, type
+Pathfinder uses OOP, and requires you to provide a Character Model containing a Humanoid in order to work. To create a new Pathfinder Class, type
 ```lua
 local Pathfinder = PathfinderMod.new(Character)
 ```
 
-Now that you have your Pathfinder class ready, using it is as simple as doing:
+> Now that you have your Pathfinder class ready, using it is as simple as doing:
 ```lua
-Pathfinder:Pathfind(DesiredDestinatin)
+Pathfinder:Pathfind(DesiredDestinatin) --Vector3 or CFrame
 ```
-A path can be extended from the current desired destination by using:
+> A path can be extended from the current desired destination by using:
 ```lua
-Pathfinder:Extend(DesiredDestinatin)
+Pathfinder:Extend(DesiredDestinatin) --Vector3 or CFrame
 ```
   
-To cancel Pathfinder, you can use:
+> To cancel Pathfinder, you can use:
 ```lua
 Pathfinder:Cancel()
 ```
-This will automatically halt Character movement, and clean Pathfinder  
-
-Once you are done using Pathfinder on a Character, ensure that you destroy it:
+This will automatically halt Character movement, and clean Pathfinder.  
+  
+> Once you are done using Pathfinder on a Character, ensure that you destroy it:
 ```lua
 Pathfinder:Destroy()
 ```
