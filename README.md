@@ -69,4 +69,4 @@ Pathfinder.IsActive --Returns true if Pathfinder is currently moving a Character
 > Pathfinder will automatically cancel movement if it is currently moving a player, and the player tries to move themselves, unless player movement is already blocked.
 
 > [!CAUTION]
-> If you use Pathfinder on a Player Character from the Server, the Ownership will NOT automatically be set to Server - you must ensure this happens yourself, and reset it when Pathfinder Finishes!
+> If you use Pathfinder on a Player Character from the Server, the Network Ownership will NOT automatically be set to Server - you must ensure this happens yourself, and reset it when Pathfinder Finishes!
