@@ -10,11 +10,11 @@ local Pathfinder = PathfinderMod.new(Character)
 
 **Now that you have your Pathfinder class ready, using it is as simple as doing:**
 ```lua
-Pathfinder:Pathfind(DesiredDestinatin) --Vector3 or CFrame
+Pathfinder:Pathfind(DesiredDestination) --Vector3 or CFrame
 ```
 **A path can be extended from the current desired destination by using:**
 ```lua
-Pathfinder:ExtendPath(DesiredDestinatin) --Vector3 or CFrame
+Pathfinder:ExtendPath(DesiredDestination) --Vector3 or CFrame
 ```
   
 **To cancel Pathfinder, you can use:**
@@ -29,7 +29,7 @@ Pathfinder:Destroy()
 ```
 
 ## Additional Features
-**You can also make a Character walk into a Position without Pathfinding by using:**
+**You can also make a Character move into a Position without Pathfinding by using:**
 ```lua
 Pathfinder:MoveInto(DesiredDestination) --Vector3 or CFrame
 ```
@@ -60,7 +60,7 @@ Pathfinder.IsActive --Returns true if Pathfinder is currently moving a Character
 
 ## Additional Information
 > [!WARNING]
-> Pathfinder uses Trove by Sleitnick to Clean up when it finishes or gets cancelled - You must download this yourself and ensure it gets required properly in `Pathfinder.lua`. Trove is referred to as Maid in Pathfinder (Not to be confused with the actual Maid module).
+> Pathfinder uses [Trove](https://sleitnick.github.io/RbxUtil/api/Trove/) by Sleitnick to Clean up when it finishes or gets cancelled - You must download this yourself and ensure it gets required properly in `Pathfinder.lua`. Trove is referred to as Maid in Pathfinder (Not to be confused with the actual Maid module).
 
 > [!NOTE]
 > Providing a CFrame to Pathfind, ExtendPath and MoveInto will make the Character copy the CFrame's LookVector upon finishing.
