@@ -52,6 +52,12 @@ Pathfinder.ReachedCheckpoint:Connect() --Fires when the Character reaches a Path
 Pathfinder.Finished:Connect() --Fires when Pathfinder is fully done moving the Character
 ```
 
+**You can also check if player movement is blocked, and if Pathfinder is currently Active (Moving the player) by checking:**
+```lua
+Pathfinder.IsPlayerMovementLocked --Returns true if the player is not allowed to move (only relevant if moving a Player Character)
+Pathfinder.IsActive --Returns true if Pathfinder is currently moving a Character
+```
+
 ## Additional Information
 > [!WARNING]
 > Pathfinder uses Trove by Sleitnick to Clean up when it finishes or gets cancelled - You must download this yourself and ensure it gets required properly in `Pathfinder.lua`. Trove is referred to as Maid in Pathfinder (Not to be confused with the actual Maid module).
