@@ -39,7 +39,8 @@ Pathfinder:MoveInto(DesiredDestination) --Vector3 or CFrame
 Pathfinder.VisualizePath = true
 ```
 This is useful for debugging your paths.
-
+  
+  
 Pathfinder will automatically cancel movement if it is currently moving a player, and the player tries to move themselves
 
 **You can Disable Player Movement while the player is being moved by Pathfinder:**
