@@ -58,6 +58,8 @@ Pathfinder.Finished:Connect() --Fires when Pathfinder is fully done moving the C
 
 > [!NOTE]
 > Providing a CFrame to Pathfind, ExtendPath and MoveInto will make the Character copy the CFrame's LookVector upon finishing.
+
+> [!NOTE]
 > Pathfinder will automatically cancel movement if it is currently moving a player, and the player tries to move themselves, unless player movement is already blocked.
 
 > [!CAUTION]
