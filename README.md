@@ -4,6 +4,6 @@ Pathfinder lets you easily Pathfind for Character Models, including the Player. 
 
 ## Getting Started
 Pathfinder uses OOP, and requires you to provide a Character Model to work. To create a new Pathfinder Class, type
-```
+```lua
 Pathfinder = PathfinderMod.new(Character)
 ```
