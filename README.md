@@ -14,7 +14,7 @@ Pathfinder:Pathfind(DesiredDestinatin) --Vector3 or CFrame
 ```
 **A path can be extended from the current desired destination by using:**
 ```lua
-Pathfinder:Extend(DesiredDestinatin) --Vector3 or CFrame
+Pathfinder:ExtendPath(DesiredDestinatin) --Vector3 or CFrame
 ```
   
 **To cancel Pathfinder, you can use:**
@@ -28,7 +28,7 @@ This will automatically halt Character movement, and clean Pathfinder.
 Pathfinder:Destroy()
 ```
 
-### Additional Features
+## Additional Features
 **You can also make a Character walk into a Position without Pathfinding by using:**
 ```lua
 Pathfinder:MoveInto(DesiredDestination) --Vector3 or CFrame
@@ -41,6 +41,7 @@ Pathfinder.VisualizePath = true
 This is useful for debugging your paths.
 
 Pathfinder will automatically cancel movement if it is currently moving a player, and the player tries to move themselves
+
 **You can Disable Player Movement while the player is being moved by Pathfinder:**
 ```lua
 Pathfinder:AllowPlayerMovement(false)
@@ -58,7 +59,7 @@ Pathfinder.Finished:Connect() --Fires when Pathfinder is fully done moving the C
 > Pathfinder uses Trove by Sleitnick to Clean up when it finishes or gets cancelled - You must download this yourself and ensure it gets required properly in `Pathfinder.lua`. Trove is referred to as Maid in Pathfinder (Not to be confused with the actual Maid module).
 
 > [!NOTE]
-> Providing a CFrame to Pathfind and ExtendPath will make the Character copy the CFrame's LookVector upon finishing.
+> Providing a CFrame to Pathfind, ExtendPath and MoveInto will make the Character copy the CFrame's LookVector upon finishing.
 
 > [!CAUTION]
 > If you use Pathfinder on a Player Character from the Server, the Ownership will NOT automatically be set to Server - you must ensure this happens yourself, and reset it when Pathfinder Finishes!
