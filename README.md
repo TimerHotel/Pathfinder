@@ -5,7 +5,7 @@ Pathfinder lets you easily Pathfind for Character Models, including the Player. 
 ## Getting Started
 Pathfinder uses OOP, and requires you to provide a Character Model to work. To create a new Pathfinder Class, type
 ```lua
-Pathfinder = PathfinderMod.new(Character)
+local Pathfinder = PathfinderMod.new(Character)
 ```
 
 Now that you have your Pathfinder class ready, using it is as simple as doing:
@@ -16,12 +16,17 @@ A path can be extended from the current desired destination by using:
 ```lua
 Pathfinder:Extend(DesiredDestinatin)
 ```
-
+  
 To cancel Pathfinder, you can use:
 ```lua
 Pathfinder:Cancel()
 ```
-This will automatically halt Character movement, and clean Pathfinder
+This will automatically halt Character movement, and clean Pathfinder  
+
+Once you are done using Pathfinder on a Character, ensure that you destroy it:
+```lua
+Pathfinder:Destroy()
+```
 
 ### Additional Features
 Pathfinder also lets you Visualize your path:
@@ -37,9 +42,9 @@ Pathfinder:AllowPlayerMovement(false)
 ```
 Allowed Movement will persist for future Pathfinding, so set it to true if you need your players to be able to move again while Pathfinder is moving them.
 
-## Additional Information:
+## Additional Information
 > [!WARNING]
-> Pathfinder uses Trove by Sleitnick to Clean up when it finishes or gets cancelled - You must download this yourself and ensure it gets required properly in Pathfinder. Trove is referred to as Maid in `Pathfinder.lua` (Not to be confused with the Maid module).
+> Pathfinder uses Trove by Sleitnick to Clean up when it finishes or gets cancelled - You must download this yourself and ensure it gets required properly in `Pathfinder.lua`. Trove is referred to as Maid in Pathfinder (Not to be confused with the actual Maid module).
 
 > [!CAUTION]
 > If you use Pathfinder on a Player Character from the Server, the Ownership will NOT automatically be set to Server - you must ensure this happens yourself, and reset it when Pathfinder Finishes!
