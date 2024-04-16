@@ -8,35 +8,35 @@ Pathfinder uses OOP, and requires you to provide a Character Model containing a 
 local Pathfinder = PathfinderMod.new(Character)
 ```
 
-> Now that you have your Pathfinder class ready, using it is as simple as doing:
+**Now that you have your Pathfinder class ready, using it is as simple as doing:**
 ```lua
 Pathfinder:Pathfind(DesiredDestinatin) --Vector3 or CFrame
 ```
-> A path can be extended from the current desired destination by using:
+**A path can be extended from the current desired destination by using:**
 ```lua
 Pathfinder:Extend(DesiredDestinatin) --Vector3 or CFrame
 ```
   
-> To cancel Pathfinder, you can use:
+**To cancel Pathfinder, you can use:**
 ```lua
 Pathfinder:Cancel()
 ```
 This will automatically halt Character movement, and clean Pathfinder.  
   
-> Once you are done using Pathfinder on a Character, ensure that you destroy it:
+**Once you are done using Pathfinder on a Character, ensure that you destroy it:**
 ```lua
 Pathfinder:Destroy()
 ```
 
 ### Additional Features
-Pathfinder also lets you Visualize your path:
+**Pathfinder also lets you Visualize your path:**
 ```lua
 Pathfinder.VisualizePath = true
 ```
 This is useful for debugging your paths.
 
 Pathfinder will automatically cancel movement if it is currently moving a player, and the player tries to move themselves
-You can Disable Player Movement while the player is being moved by Pathfinder:
+**You can Disable Player Movement while the player is being moved by Pathfinder:**
 ```lua
 Pathfinder:AllowPlayerMovement(false)
 ```
