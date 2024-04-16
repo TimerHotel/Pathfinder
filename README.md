@@ -60,7 +60,7 @@ Pathfinder.IsActive --Returns true if Pathfinder is currently moving a Character
 
 ## Additional Information
 > [!WARNING]
-> Pathfinder uses [Trove](https://sleitnick.github.io/RbxUtil/api/Trove/) by Sleitnick to Clean up when it finishes or gets cancelled - You must download this yourself and ensure it gets required properly in `Pathfinder.lua`. Trove is referred to as Maid in Pathfinder (Not to be confused with the actual Maid module).
+> Pathfinder uses [Trove](https://sleitnick.github.io/RbxUtil/api/Trove/) by [Sleitnick](https://github.com/Sleitnick) to Clean up when it finishes or gets cancelled - You must download this yourself and ensure it gets required properly in `Pathfinder.lua`. Trove is referred to as Maid in Pathfinder (Not to be confused with the actual Maid module).
 
 > [!NOTE]
 > Providing a CFrame to Pathfind, ExtendPath and MoveInto will make the Character copy the CFrame's LookVector upon finishing.
