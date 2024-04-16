@@ -23,6 +23,7 @@ Pathfinder:Cancel()
 ```
 This will automatically halt Character movement, and clean Pathfinder
 
+### Additional Features
 Pathfinder also lets you Visualize your path:
 ```lua
 Pathfinder.VisualizePath = true
@@ -34,9 +35,11 @@ You can Disable Player Movement while the player is being moved by Pathfinder:
 ```lua
 Pathfinder:AllowPlayerMovement(false)
 ```
-Allowed Movement will persist for future Pathfinding, so set it to true if you need your players to be able to move again while Pathfinder is moving them
+Allowed Movement will persist for future Pathfinding, so set it to true if you need your players to be able to move again while Pathfinder is moving them.
 
-## Notice:
-Pathfinder uses Trove by Sleitnick to Clean up when it finishes or gets cancelled - You must download this yourself and ensure it gets required properly in Pathfinder. Trove is referred to as Maid in Pathfinder (Not to be confused with the Maid module).
+## Additional Information:
+> [!WARNING]
+> Pathfinder uses Trove by Sleitnick to Clean up when it finishes or gets cancelled - You must download this yourself and ensure it gets required properly in Pathfinder. Trove is referred to as Maid in `Pathfinder.lua` (Not to be confused with the Maid module).
 
-If you use Pathfinder on a Player Character from the Server, the Ownership will NOT automatically be set to Server - you must ensure this happens yourself, and reset it when Pathfinder Finishes!
+> [!CAUTION]
+> If you use Pathfinder on a Player Character from the Server, the Ownership will NOT automatically be set to Server - you must ensure this happens yourself, and reset it when Pathfinder Finishes!
